@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In - Exclusive</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="top-banner flex flex-end">
+        <div
+          class="px-3 font-14 flex centered font-400 py-07 space-btw"
+          style="width: 60%"
+        >
+          <p>
+            Summer Sale For All Swim Suits And Free Express Delivery – OFF 50%!
+            <a class="font-weight-600" href="#">Shop Now</a>
+          </p>
+          <div class="flex centered">
+            <p>English</p>
+            <span
+              class="iconify"
+              data-icon="material-symbols-light:keyboard-arrow-down"
+              data-inline="false"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar flex space-btw px-3 py-07 font-16">
+        <h1 class="logo">Exclusive</h1>
+        <ul class="nav-links flex gap-1">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+        <div class="search-bar gap-1 flex centered">
+          <input type="text" placeholder="What are you looking for?" />
+          <button>
+            <span
+              class="iconify"
+              data-icon="material-symbols-light:search"
+              data-inline="false"
+            ></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="signup-container flex gap-4 mt-4">
+        <div class="side-image">
+          <img
+            src="/static/Side Image.png"
+            alt="Placeholder for shopping cart and phone"
+            class="image"
+          />
+        </div>
+
+        <div class="signup-form flex flex-end">
+          <div class="form">
+            <h2 class="font-weight-500 sec-font font-36">
+              Log in to Exclusive
+            </h2>
+            <p class="font-16 mt-1">Enter your details below</p>
+            <form class="flex-column gap-1 mt-2 ct">
+              <input
+                type="text"
+                name="name"
+                placeholder="Email or Phone Number"
+                required
+              />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </form>
+            <div class="mt-3 flex space-btw">
+              <button
+                class="font-16 px-4 py-07 primary-btn rad-4"
+                type="submit"
+              >
+                Log In
+              </button>
+
+              <button class="font-16 col-primary-orange">
+                Forgot Password ?
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container flex gap-3 py-4 px-4">
+        <div class="footer-section">
+          <h3 class="font-weight-700 font-24">Exclusive</h3>
+          <p class="font-weight-500 font-20 sec-font mt-1">Subscribe</p>
+          <p class="mt-1">Get 10% off your first order</p>
+          <div class="flex mail-contain space-btw">
+            <input class="mail" type="email" placeholder="Enter your email" />
+            <button>
+              <svg
+                class="flex centered"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.91196 12H3.99996L2.02296 4.13505C2.0103 4.08934 2.00259 4.0424 1.99996 3.99505C1.97796 3.27405 2.77196 2.77405 3.45996 3.10405L22 12L3.45996 20.896C2.77996 21.223 1.99596 20.737 1.99996 20.029C2.00198 19.9658 2.0131 19.9031 2.03296 19.843L3.49996 15"
+                  stroke="#FAFAFA"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <div class="mt-1">
+            <p class="mt-1">111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh.</p>
+            <p class="mt-1">exclusive@gmail.com</p>
+            <p class="mt-1">+88015-88888-9999</p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Account</h3>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Login / Register</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Download App</h3>
+          <div class="flex centered gap-1 mt-1">
+            <img src="./static/barcode.svg" alt="QR Code placeholder" />
+            <div class="app-links" style="margin-top: 0.5rem">
+              <img src="./static/playstore.svg" alt="Google Play placeholder" />
+              <img src="./static/appstore.svg" alt="App Store placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex centered py-1 copy">
+        <p class="font-14 col-cat-grey">
+          &copy; Copyright Rimel 2022. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

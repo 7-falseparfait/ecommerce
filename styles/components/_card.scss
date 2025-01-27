@@ -1,0 +1,110 @@
+.cards{
+ display: flex;
+ gap: 2rem;
+ margin-top: 2rem;
+}
+.carousel{
+  // border: 2px solid red;
+  overflow-x: hidden;
+  overflow: auto;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.carousel::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+  /* Set the color of the scrollbar track */
+  border-radius: 10px;
+  /* Match the thumb for a seamless look */
+}
+.product-card{
+ max-width: 21%;
+ flex-shrink: 0;
+}
+.image-container{
+ position: relative;
+ padding-top: 1.5rem;
+ background-color: $bg-card-color;
+}
+.image-container img{
+ object-fit: contain;
+ width: 80%;
+}
+.discount-badge{
+ position: absolute;
+ top: 2%;
+ left: 4%;
+ background-color: $primary-orange;
+ color: white;
+ padding: 0.35rem 1rem;
+ border-radius: 4px;
+}
+.discount-badge + div{
+ position: absolute;
+ top: 2%;
+right: -2%;
+}
+.current-price{
+ font-weight: 500;
+ color: $primary-orange;
+ margin-right: 10px;
+}
+.product-title{
+ font-weight: 500;
+ font-size: 16px;
+}
+.product-card:hover{
+ cursor: pointer;
+}
+.product-card:hover .add-to-cart{
+ visibility: visible;
+ opacity: 1;
+ transform: translateY(0);
+}
+
+.cat-cards > div{
+  width: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $secondary-grey;
+  padding: 2rem 0;
+  border-radius: 4px;
+ }
+
+ .cat-cards > div:hover{
+  background-color: $primary-orange;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  color: white;
+ }
+ .cat-cards>div:hover img {
+   filter: brightness(0) invert(1);
+ }
+
+.cat-cards>div>:first-child{
+  width: 100%;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.cat-cards>div>:first-child img {
+  object-fit: contain;
+  width: 55%;
+}
+.camera{
+  // filter: brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(180deg) brightness(65%);
+  filter: brightness(0) saturate(100%);
+}

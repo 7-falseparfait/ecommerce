@@ -1,0 +1,60 @@
+.btn-sm {
+ padding: 1rem 2.2rem;
+ font-size: 1.6rem;
+ font-family: $font-primary;
+}
+.primary-btn{
+ background-color: $primary-orange;
+ color: white;
+}
+.rad-13 {
+ border-radius: 13px;
+}
+
+.rad-16 {
+ border-radius: 16px;
+}
+.rad-4{
+ border-radius: 4px;
+}
+
+.rad-circle {
+ border-radius: 50%;
+}
+.btn-med {
+ padding: 1.8rem 4.4rem;
+ font-size: 2rem;
+ border-radius: 4rem;
+ max-width: fit-content;
+}
+
+.btn-lg {
+ padding: 1.3rem 10rem;
+}
+
+.btn-filled-pri {
+ background-color: var(--pri-col-1);
+ //   color: var(--sec-color);
+ color: white;
+}
+
+.btn-filled-sec {
+ background-color: var(--sec-col);
+ color: var(--pri-col-1);
+}
+
+.btn-outline {
+ border: 1px solid $secondary-grey;
+}
+.add-to-cart{
+ background: black;
+ color: white;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 1rem 0rem;
+ visibility: hidden;
+ transform: translateY(5px);
+ transition: transform 0.7s ease;
+}
