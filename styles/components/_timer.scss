@@ -1,0 +1,42 @@
+.time-unit .time {
+ font-size: 16px;
+ font-weight: 600;
+}
+
+.time-unit .label {
+ font-size: 11px;
+}
+
+.countdown {
+ display: flex;
+ gap: 1.5rem;
+}
+
+.time-unit {
+ display: flex;
+ flex-direction: column;
+ height: 60px;
+ width: 60px;
+ justify-content: center;
+ align-items: center;
+ background-color: white;
+ color: black;
+ border-radius: 50%;
+}
+
+.time .timer-label {
+   font-size: 12px;
+   font-weight: 500;
+}
+ 
+.timer-value {
+   font-weight: 700;
+   font-size: 28px;
+   font-family: $font-secondary;
+  }
+ 
+.separator {
+   font-size: 22px;
+   color: $primary-orange;
+   font-weight: 700;
+  }

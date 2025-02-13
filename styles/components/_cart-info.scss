@@ -1,0 +1,160 @@
+.cart-icon a {
+ text-decoration: none;
+ padding-bottom: 0rem;
+}
+
+.cart-container {
+ height: 80vh;
+}
+
+.cart-container img {
+ width: 500px;
+}
+
+.cart-row {
+ height: 60px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.cart-row>* {
+ width: 20%;
+}
+
+.cart-item {
+ display: flex;
+ align-items: center;
+ position: relative;
+}
+
+.cart-item img {
+ object-fit: contain;
+ width: 60px;
+}
+
+.cart-item-name {
+ margin-left: 15px;
+
+}
+
+// .cart-item-price{
+
+// }
+.cart-item-quantity {
+ width: 50px;
+ /* Adjust width as needed */
+ text-align: center;
+ /* Centers the number */
+
+}
+
+/* For WebKit-based browsers (Chrome, Edge, Safari) */
+.cart-item-quantity::-webkit-inner-spin-button,
+.cart-item-quantity::-webkit-outer-spin-button {
+ opacity: 1;
+ appearance: auto;
+}
+
+.cart-header>* {
+ width: 20%;
+}
+
+.cart-header {
+ display: flex;
+ justify-content: space-between;
+}
+
+.cart-item,
+.cart-item-price-container,
+.cart-quantity-container,
+.cart-item-total {
+ font-size: 14px;
+}
+
+.y {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.cart-row {
+ margin: 0 4rem;
+ padding: 1rem 0;
+ border-bottom: 1px solid $secondary-grey;
+}
+
+.cart-header {
+ margin: 0 4rem;
+}
+
+.cart-summary {
+ position: absolute;
+ bottom: 10px;
+ right: 20px;
+ width: 40%;
+ background: white;
+ border: 1px solid #ccc;
+ padding: 20px;
+ font: 16px;
+ border-radius: 3px;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.summary-item {
+ display: flex;
+ justify-content: space-between;
+ margin: 8px 0;
+ font-size: 16px;
+}
+
+.total {
+ font-weight: bold;
+ font-size: 16px;
+}
+
+.checkout-btn {
+ display: block;
+ width: 70%;
+ padding: 12px;
+ background: #e63946;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ font-size: 16px;
+ margin: 0 auto;
+ text-align: center;
+}
+
+.checkout-btn:hover {
+ background: #d62839;
+}
+
+.cart-info {
+ position: relative;
+ padding-bottom: 200px;
+}
+
+.cart-total {
+ font-size: 16px;
+}
+
+.delete-icon {
+ position: absolute;
+ left: 1px;
+ top: 5px;
+ width: 25px;
+ height: 25px;
+ cursor: pointer;
+ display: none;
+}
+
+.cart-row {
+ position: relative;
+}
+
+.cart-row:hover .delete-icon {
+ display: block;
+}

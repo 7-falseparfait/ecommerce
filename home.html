@@ -46,9 +46,11 @@
               data-inline="false"
             ></span>
           </button>
-          <div class="flex centered gap-1">
-            <img src="./static/heart.svg" alt="" / width="28px"> <img
-            src="./static/cart.svg" alt="" / width="28px">
+          <div class="flex centered gap-1 cart-icon">
+            <img src="./static/heart.svg" alt="" / width="28px">
+            <a class="flex centered" href="cart.html">
+              <img src="./static/cart.svg" alt="" / width="20px">
+            </a>
           </div>
         </div>
       </nav>
@@ -417,7 +419,12 @@
       </div>
       <div class="flex space-btw allign-center">
         <div class="font-weight-600 font-36">Best Selling Products</div>
-        <button class="primary-btn py-07 px-3 rad-4 viewAll">View All</button>
+        <button
+          class="primary-btn py-07 px-3 rad-4 viewAll"
+          data-original-text="View All"
+        >
+          View All
+        </button>
       </div>
       <div class="drop-container">
         <div class="flex space-btw mt-2">
@@ -659,53 +666,57 @@
         <div class="promo-section grid col-2-40">
           <div class="promo-content col-white flex-column gap-2">
             <p class="category font-16 col-secondary-green">Categories</p>
-          <div class="flex-column gap-2" style="margin-top: 3rem;">
-            <h1 class="headline font-48 sec-font font-600">Enhance Your <br>Music Experience</h1>
-            <div class="countdown">
-              <div class="time-unit">
-                <span class="time">23</span>
-                <span class="label">Hours</span>
+            <div class="flex-column gap-2" style="margin-top: 3rem">
+              <h1 class="headline font-48 sec-font font-600">
+                Enhance Your <br />Music Experience
+              </h1>
+              <div class="countdown">
+                <div class="time-unit">
+                  <span class="time">23</span>
+                  <span class="label">Hours</span>
+                </div>
+                <div class="time-unit">
+                  <span class="time">05</span>
+                  <span class="label">Days</span>
+                </div>
+                <div class="time-unit">
+                  <span class="time">59</span>
+                  <span class="label">Minutes</span>
+                </div>
+                <div class="time-unit">
+                  <span class="time">35</span>
+                  <span class="label">Seconds</span>
+                </div>
               </div>
-              <div class="time-unit">
-                <span class="time">05</span>
-                <span class="label">Days</span>
-              </div>
-              <div class="time-unit">
-                <span class="time">59</span>
-                <span class="label">Minutes</span>
-              </div>
-              <div class="time-unit">
-                <span class="time">35</span>
-                <span class="label">Seconds</span>
-              </div>
+              <button class="buy-now font-16 py-1 px-2 rad-4 mt-2">
+                Buy Now!
+              </button>
             </div>
-            <button class="buy-now font-16 py-1 px-2 rad-4 mt-2">Buy Now!</button>
-          </div>
           </div>
           <div class="promo-image pd-1">
-            <img src="./static/jbl.png" alt="JBL Speaker">
+            <img src="./static/jbl.png" alt="JBL Speaker" />
           </div>
         </div>
-    </div>
+      </div>
     </section>
     <section class="category font-16 px-3 mt-1 py-2">
       <div class="rect-category flex allign-center gap-1">
         <div class="rect"></div>
         <div class="title col-primary-orange font-weight-600">Our Products</div>
       </div>
-      <div class="flex space-btw allign-center mt-1">
+      <div class="flex space-btw allign-center mt-1 mb-1">
         <div class="font-weight-600 font-36">Explore Our Products</div>
       </div>
-      <div>
-        <div class=" flex space-btw">
+      <div class="flex-column gap-3">
+        <div class="flex space-btw">
           <div class="product-card">
             <div class="image-container flex-column centered">
               <img
-                src="./static/Gucci.png"
+                src="./static/kidcar.png"
                 alt="Gucci duffle bag"
                 class="product-image"
               />
-              <div class="discount-badge">-15%</div>
+              <div class="discount-badge">-10%</div>
               <div class="flex-column">
                 <button class="wishlist-button">
                   <img src="./static/heart.svg" alt="" />
@@ -716,7 +727,7 @@
               </div>
               <button class="add-to-cart">Add To Cart</button>
             </div>
-            <div class="product-title">Gucci Duffle Bag</div>
+            <div class="product-title">Kids Electric Car</div>
             <div class="price-container">
               <span class="current-price">$960</span>
               <span class="original-price">$1150</span>
@@ -730,7 +741,7 @@
           <div class="product-card">
             <div class="image-container flex-column centered">
               <img
-                src="./static/Gucci.png"
+                src="./static/Q-Jacket.png"
                 alt="Gucci duffle bag"
                 class="product-image"
               />
@@ -745,10 +756,10 @@
               </div>
               <button class="add-to-cart">Add To Cart</button>
             </div>
-            <div class="product-title">Gucci Duffle Bag</div>
+            <div class="product-title">Quilted Satin Jacket</div>
             <div class="price-container">
-              <span class="current-price">$960</span>
-              <span class="original-price">$1150</span>
+              <span class="current-price">$760</span>
+              <span class="original-price">$850</span>
             </div>
             <div class="rating">
               <span class="stars">★★★★★</span>
@@ -759,11 +770,11 @@
           <div class="product-card">
             <div class="image-container flex-column centered">
               <img
-                src="./static/Gucci.png"
+                src="./static/bookshelf.png"
                 alt="Gucci duffle bag"
                 class="product-image"
               />
-              <div class="discount-badge">-15%</div>
+              <div class="discount-badge">-10%</div>
               <div class="flex-column">
                 <button class="wishlist-button">
                   <img src="./static/heart.svg" alt="" />
@@ -774,10 +785,10 @@
               </div>
               <button class="add-to-cart">Add To Cart</button>
             </div>
-            <div class="product-title">Gucci Duffle Bag</div>
+            <div class="product-title">Small Bookshelf</div>
             <div class="price-container">
-              <span class="current-price">$960</span>
-              <span class="original-price">$1150</span>
+              <span class="current-price">$560</span>
+              <span class="original-price">$800</span>
             </div>
             <div class="rating">
               <span class="stars">★★★★★</span>
@@ -788,11 +799,11 @@
           <div class="product-card">
             <div class="image-container flex-column centered">
               <img
-                src="./static/Gucci.png"
+                src="./static/CPU.png"
                 alt="Gucci duffle bag"
                 class="product-image"
               />
-              <div class="discount-badge">-15%</div>
+              <div class="discount-badge">-4%</div>
               <div class="flex-column">
                 <button class="wishlist-button">
                   <img src="./static/heart.svg" alt="" />
@@ -803,20 +814,553 @@
               </div>
               <button class="add-to-cart">Add To Cart</button>
             </div>
-            <div class="product-title">Gucci Duffle Bag</div>
+            <div class="product-title">RGB liquid GPU Cooler</div>
             <div class="price-container">
-              <span class="current-price">$960</span>
-              <span class="original-price">$1150</span>
+              <span class="current-price">$160</span>
+              <span class="original-price">$170</span>
             </div>
             <div class="rating">
               <span class="stars">★★★★★</span>
               <span class="review-count">(99)</span>
             </div>
-          </div>
           </div>
         </div>
-        <div></div>
+        <div class="flex space-btw">
+          <div class="product-card">
+            <div class="image-container flex-column centered">
+              <img src="./static/dog.png" alt="Dog" class="product-image" />
+              <div class="discount-badge">-15%</div>
+              <div class="flex-column">
+                <button class="wishlist-button">
+                  <img src="./static/heart.svg" alt="" />
+                </button>
+                <button class="view-button">
+                  <img src="./static/eye.svg" alt="" />
+                </button>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-title">Breed Dry Dog Food</div>
+            <div class="price-container">
+              <span class="current-price">$200</span>
+              <span class="original-price">$230</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(99)</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="image-container flex-column centered">
+              <img
+                src="./static/camera.png"
+                alt="Gucci duffle bag"
+                class="product-image"
+              />
+              <div class="discount-badge">-15%</div>
+              <div class="flex-column">
+                <button class="wishlist-button">
+                  <img src="./static/heart.svg" alt="" />
+                </button>
+                <button class="view-button">
+                  <img src="./static/eye.svg" alt="" />
+                </button>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-title">CANON EOS DSLR Camera</div>
+            <div class="price-container">
+              <span class="current-price">$960</span>
+              <span class="original-price">$1150</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(99)</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="image-container flex-column centered">
+              <img
+                src="./static/Gucci.png"
+                alt="Gucci duffle bag"
+                class="product-image"
+              />
+              <div class="discount-badge">-15%</div>
+              <div class="flex-column">
+                <button class="wishlist-button">
+                  <img src="./static/heart.svg" alt="" />
+                </button>
+                <button class="view-button">
+                  <img src="./static/eye.svg" alt="" />
+                </button>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-title">Gucci Duffle Bag</div>
+            <div class="price-container">
+              <span class="current-price">$960</span>
+              <span class="original-price">$1150</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(99)</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="image-container flex-column centered">
+              <img
+                src="./static/gamepag.png"
+                alt="Gucci duffle bag"
+                class="product-image"
+              />
+              <div class="discount-badge">-15%</div>
+              <div class="flex-column">
+                <button class="wishlist-button">
+                  <img src="./static/heart.svg" alt="" />
+                </button>
+                <button class="view-button">
+                  <img src="./static/eye.svg" alt="" />
+                </button>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-title">HAVIT HV-G92 Gamepad</div>
+            <div class="price-container">
+              <span class="current-price">$120</span>
+              <span class="original-price">$160</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(99)</span>
+            </div>
+          </div>
+        </div>
       </div>
-      
+
+      <div class="mt-1 drop flex-column gap-2">
+        <div class="flex space-btw">
+          <!-- Product Card 1 -->
+          <div class="product-card">
+            <div class="image-container flex centered flex-column">
+              <img
+                src="./static/gamepag.png"
+                alt="HAVIT HV-G92 Gamepad"
+                class="product-image"
+              />
+              <div class="discount-badge">-40%</div>
+              <div class="flex-column">
+                <button class="wishlist-button">
+                  <img src="./static/heart.svg" alt="" />
+                </button>
+                <button class="view-button">
+                  <img src="./static/eye.svg" alt="" />
+                </button>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-title">HAVIT HV-G92 Gamepad</div>
+            <div class="price-container">
+              <span class="current-price">$120</span>
+              <span class="original-price">$160</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(88)</span>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="product-card">
+            <div class="image-container flex-column centered">
+              <img
+                src="./static/keyboard.png"
+                alt="AK-900 Wired Keyboard"
+                class="product-image"
+              />
+              <div class="discount-badge">-35%</div>
+              <div class="flex-column">
+                <button class="wishlist-button">
+                  <img src="./static/heart.svg" alt="" />
+                </button>
+                <button class="view-button">
+                  <img src="./static/eye.svg" alt="" />
+                </button>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-title">AK-900 Wired Keyboard</div>
+            <div class="price-container">
+              <span class="current-price">$960</span>
+              <span class="original-price">$1160</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="review-count">(75)</span>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="product-card">
+            <div class="image-container flex-column centered">
+              <img
+                src="./static/monitor.png"
+                alt="IPS LCD Gaming Monitor"
+                class="product-image"
+              />
+              <div class="discount-badge">-30%</div>
+              <div class="flex-column">
+                <button class="wishlist-button">
+                  <img src="./static/heart.svg" alt="" />
+                </button>
+                <button class="view-button">
+                  <img src="./static/eye.svg" alt="" />
+                </button>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-title">IPS LCD Gaming Monitor</div>
+            <div class="price-container">
+              <span class="current-price">$370</span>
+              <span class="original-price">$400</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(99)</span>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="product-card">
+            <div class="image-container flex-column centered">
+              <img
+                src="./static/chair.png"
+                alt="S-Series Comfort Chair"
+                class="product-image"
+              />
+              <div class="discount-badge">-25%</div>
+              <div class="flex-column">
+                <button class="wishlist-button">
+                  <img src="./static/heart.svg" alt="" />
+                </button>
+                <button class="view-button">
+                  <img src="./static/eye.svg" alt="" />
+                </button>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-title">S-Series Comfort Chair</div>
+            <div class="price-container">
+              <span class="current-price">$375</span>
+              <span class="original-price">$400</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(99)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex space-btw mama">
+          <div class="product-card">
+            <div class="image-container flex-column centered">
+              <img
+                src="./static/kidcar.png"
+                alt="Gucci duffle bag"
+                class="product-image"
+              />
+              <div class="discount-badge">-10%</div>
+              <div class="flex-column">
+                <button class="wishlist-button">
+                  <img src="./static/heart.svg" alt="" />
+                </button>
+                <button class="view-button">
+                  <img src="./static/eye.svg" alt="" />
+                </button>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-title">Kids Electric Car</div>
+            <div class="price-container">
+              <span class="current-price">$960</span>
+              <span class="original-price">$1150</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(99)</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="image-container flex-column centered">
+              <img
+                src="./static/Q-Jacket.png"
+                alt="Gucci duffle bag"
+                class="product-image"
+              />
+              <div class="discount-badge">-15%</div>
+              <div class="flex-column">
+                <button class="wishlist-button">
+                  <img src="./static/heart.svg" alt="" />
+                </button>
+                <button class="view-button">
+                  <img src="./static/eye.svg" alt="" />
+                </button>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-title">Quilted Satin Jacket</div>
+            <div class="price-container">
+              <span class="current-price">$760</span>
+              <span class="original-price">$850</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(99)</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="image-container flex-column centered">
+              <img
+                src="./static/bookshelf.png"
+                alt="Gucci duffle bag"
+                class="product-image"
+              />
+              <div class="discount-badge">-10%</div>
+              <div class="flex-column">
+                <button class="wishlist-button">
+                  <img src="./static/heart.svg" alt="" />
+                </button>
+                <button class="view-button">
+                  <img src="./static/eye.svg" alt="" />
+                </button>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-title">Small Bookshelf</div>
+            <div class="price-container">
+              <span class="current-price">$560</span>
+              <span class="original-price">$800</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(99)</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="image-container flex-column centered">
+              <img
+                src="./static/CPU.png"
+                alt="Gucci duffle bag"
+                class="product-image"
+              />
+              <div class="discount-badge">-4%</div>
+              <div class="flex-column">
+                <button class="wishlist-button">
+                  <img src="./static/heart.svg" alt="" />
+                </button>
+                <button class="view-button">
+                  <img src="./static/eye.svg" alt="" />
+                </button>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="product-title">RGB liquid GPU Cooler</div>
+            <div class="price-container">
+              <span class="current-price">$160</span>
+              <span class="original-price">$170</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(99)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex centered mt-4 viewAll">
+        <button
+          class="primary-btn py-1 px-2 rad-4 viewAll"
+          data-original-text="View All Products"
+        >
+          View All Products
+        </button>
+      </div>
+      <div class="cust-line"></div>
+    </section>
+    <section class="category font-16 px-3 mt-1 py-2">
+      <div class="rect-category flex allign-center gap-1">
+        <div class="rect"></div>
+        <div class="title col-primary-orange font-weight-600">Featured</div>
+      </div>
+      <div class="flex space-btw allign-center mt-1 mb-1">
+        <div class="font-weight-600 font-36">New Arrival</div>
+      </div>
+      <div class="grid gap-2 col-2 images-grid" style="width: 100%">
+        <div class="image-1 dinaka">
+          <img src="./static/PS5.png" alt="" />
+          <div class="text">
+            <h3 class="sec-font font-27 font-600">PlayStation 5</h3>
+            <p class="font-400 font-18 mt-2 mb-2">
+              Black and White version of the PS5 <br />
+              coming out on sale
+            </p>
+            <a href="#">Shop Now</a>
+          </div>
+        </div>
+        <div class="flex-column gap-2 dinaka">
+          <div class="image-2">
+            <img src="./static/elegantwoman.png" alt="" />
+            <div class="rrr">
+              <h3 class="sec-font font-27 font-600">Women's Collection</h3>
+              <p class="font-400 font-18 mt-1 mb-1">
+                Featured woman collections that <br />
+                give you another vibe.
+              </p>
+              <a class="pb-2" href="#">Shop Now</a>
+            </div>
+          </div>
+          <div class="flex gap-2" style="height: 100%">
+            <div class="image-3" style="position: relative">
+              <img src="./static/speaker.png" alt="" srcset="" />
+              <div class="r">
+                <h3 class="sec-font font-27 font-600">Speaker</h3>
+                <p class="font-400 font-18 mt-1 mb-1">
+                  Amazon Wireless speakers
+                </p>
+                <a href="#">Shop Now</a>
+              </div>
+            </div>
+            <div class="image-3" style="position: relative">
+              <img src="./static/perfume.png" alt="" srcset="" />
+              <div class="r">
+                <h3 class="sec-font font-27 font-600">Perfume</h3>
+                <p class="font-400 font-18 mt-1 mb-1">GUCCI INTENSE OUD EDP</p>
+                <a href="#">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <button id="back-to-top" onclick="scrollToTop()">
+      <svg
+        width="46"
+        height="46"
+        viewBox="0 0 46 46"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="23"
+          cy="23"
+          r="23"
+          transform="rotate(-90 23 23)"
+          fill="#F5F5F5"
+        />
+        <path
+          d="M23 31V15M16 22L23 15L30 22"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <section class="services px-6">
+      <div class="service-container mt-3 mb-3 flex space-btw">
+        <div>
+          <img src="./static/Services.png" alt="" />
+          <h3>Free and fast Delivery</h3>
+          <p>Free delivery for all orders over $140</p>
+        </div>
+        <div>
+          <img src="./static/247.png" alt="" />
+          <h3>24/7 CUSTOMER SERVICE</h3>
+          <p>Friendly 24/7 customer support</p>
+        </div>
+        <div>
+          <img src="./static/moneyback.png" alt="" />
+          <h3>MONEY BACK GUARANTEE</h3>
+          <p>We return money within 30 days</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container flex gap-3 py-4 px-4">
+        <div class="footer-section">
+          <h3 class="font-weight-700 font-24">Exclusive</h3>
+          <p class="font-weight-500 font-20 sec-font mt-1">Subscribe</p>
+          <p class="mt-1">Get 10% off your first order</p>
+          <div class="flex mail-contain space-btw">
+            <input class="mail" type="email" placeholder="Enter your email" />
+            <button>
+              <svg
+                class="flex centered"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.91196 12H3.99996L2.02296 4.13505C2.0103 4.08934 2.00259 4.0424 1.99996 3.99505C1.97796 3.27405 2.77196 2.77405 3.45996 3.10405L22 12L3.45996 20.896C2.77996 21.223 1.99596 20.737 1.99996 20.029C2.00198 19.9658 2.0131 19.9031 2.03296 19.843L3.49996 15"
+                  stroke="#FAFAFA"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <div class="mt-1">
+            <p class="mt-1">111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh.</p>
+            <p class="mt-1">exclusive@gmail.com</p>
+            <p class="mt-1">+88015-88888-9999</p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Account</h3>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Login / Register</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Download App</h3>
+          <div class="flex centered gap-1 mt-1">
+            <img src="./static/barcode.svg" alt="QR Code placeholder" />
+            <div class="app-links" style="margin-top: 0.5rem">
+              <img src="./static/playstore.svg" alt="Google Play placeholder" />
+              <img src="./static/appstore.svg" alt="App Store placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex centered py-1 copy">
+        <p class="font-14 col-cat-grey">
+          &copy; Copyright Rimel 2022. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

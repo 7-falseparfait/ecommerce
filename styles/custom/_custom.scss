@@ -91,20 +91,6 @@ form input::placeholder{
    background-color: $primary-orange;
    border-radius: 3px;
  }
- .time .timer-label{
-   font-size: 12px;
-   font-weight: 500;
- }
- .timer-value{
-   font-weight: 700;
-   font-size: 28px;
-   font-family: $font-secondary;
- }
- .separator{
-   font-size: 22px;
-   color: $primary-orange;
-   font-weight: 700;
- }
  .content-wrapper{
    display: flex;
    justify-content: space-between;
@@ -115,35 +101,19 @@ form input::placeholder{
 .drop-container{
   overflow: hidden;
 }
-.drop{
-  height: 0px;
-  transition: height 0.3s ease;
+.drop {
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  /* Transition max-height */
   overflow: hidden;
 }
 .show {
-  height: 400px;
+  min-height: fit-content;
 }
 
 .cust-top{
   border-top: 1px solid $secondary-grey;
 }
-.notification {
-  position: fixed;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  color: black;
-  padding: 10px 20px;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
- }
 
 .view{
  top: 20px;
@@ -161,50 +131,51 @@ form input::placeholder{
 .col-white{
   color: white;
 }
-.promo-image img{
-  object-fit: contain;
-  width: 70%;
-}
-.promo-image{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.time-unit .time{
-  font-size: 16px;
-  font-weight: 600;
-}
-.time-unit .label{
-  font-size: 11px;
-}
-.countdown{
-  display: flex;
-  gap: 1.5rem;
-}
+
 .promo-content{
   padding: 2rem;
 }
 
-.time-unit{
-  display: flex;
-  flex-direction: column;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: black;
-  border-radius: 50%;
-} 
 .buy-now{
   width: fit-content;
   background-color: #00ff66;
 }
-.promo-image{
-  background: radial-gradient(
-    circle at center, 
-    rgba(200, 200, 200, 0.3) 40%, /* Softer light grey with reduced opacity */
-    rgba(220, 220, 220, 0.15) 50%, /* Even more subtle light grey */
-    rgba(240, 240, 240, 0) 60%    /* Fully transparent at 60% */
-  );
+.dinaka{
+  height: 100%;
+  position: relative;
+}
+.text{
+  position: absolute;
+  left: 6%;
+  top: 75%;
+  color: white;
+}
+.rrr{
+  position: absolute;
+    left: 6%;
+    top: 50%;
+    color: white;
+}
+.r{
+  position: absolute;
+    left: 6%;
+    top: 60%;
+    color: white;
+}
+.service-container>div{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.service-container>div img{
+  width: 40%;
+}
+.service-container>div h3{
+  font-weight: 600;
+  font-size: 20px;
+}
+.service-container>div p {
+  font-size: 14px;
 }
